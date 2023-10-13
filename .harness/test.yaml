@@ -14,7 +14,6 @@ pipeline:
     - stage:
         name: Build
         identifier: Build
-        description: ""
         type: CI
         spec:
           cloneCodebase: true
@@ -22,7 +21,7 @@ pipeline:
             os: Linux
             arch: Amd64
           runtime:
-            type: Cloud
+            type: Docker
             spec: {}
           execution:
             steps:
