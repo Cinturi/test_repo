@@ -1,0 +1,15 @@
+inputSet:
+  name: test_input_set
+  identifier: test_input_set
+  orgIdentifier: default
+  projectIdentifier: cinturi
+  pipeline:
+    identifier: test
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
+  object Object: pipeline.properties.ci.codebase
